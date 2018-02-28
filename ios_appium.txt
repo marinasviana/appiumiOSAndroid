@@ -2,4 +2,4 @@
 platformName = "iOS"
 platformVersion = "11.2"
 deviceName = "iPhone 7"
-app = "/Users/m.siqueira.viana/Documents/TesteAppium/AppiumiOSAndroid/build/ipa/SimpleCalculator.app"
+app = "/Users/m.siqueira.viana/Documents/TesteAppium/appiumiOSAndroid/build/ipa/SimpleCalculator.app"
