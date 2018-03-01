@@ -2,14 +2,17 @@ class Calculadora
   def initialize
     @primeiroNumero = 'apple_first_input'
     @segundoNumero = 'apple_second_input'
-    @botaoSoma = 'apple-sum-button'
+    @operacoes = {'soma' => 'apple-sum-button', 'subtração' => 'apple-subtract-button', 'multiplicação' => 'apple-multiply-button', 'divisão' => 'apple-divide-button'}
     @resultado = 'apple_result_text'
   end
 
-  def soma(int1, int2)
+  def numeros(int1, int2)
     find_element(name: @primeiroNumero).send_keys(int1)
     find_element(name: @segundoNumero).send_keys(int2)
-    find_element(name: @botaoSoma).click
+  end
+
+  def operacaoMatematica(operacao)
+    find_element(name: @operacoes[operacao]).click
   end
 
   def resultado
